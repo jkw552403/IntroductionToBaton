@@ -1,13 +1,3 @@
-.reverse .line1,.reverse .line2,.reverse .line3,.reverse .line4 {
-	background:#2187e7; 
-	width:0px;
-	height:1px;
-	box-shadow:0px 0px 5px 1px rgba(0,198,255,0.5);
-	-moz-transform-origin: 0 0;
-	-webkit-transform-origin: 0 0;
-}
-
-.reverse .line1 { -moz-transform:rotate(17deg);  -webkit-transform:rotate(17deg);   -moz-animation:moveReverse  0.65s linear forwards; -webkit-animation:moveReverse  0.65s linear forwards;}
 .reverse .line2 { -moz-transform:rotate(140deg); -webkit-transform:rotate(140deg);  -moz-animation:move1Reverse 0.75s linear forwards; -webkit-animation:move1Reverse  0.75s linear forwards;}
 .reverse .line3 { -moz-transform:rotate(235deg); -webkit-transform:rotate(235deg);  -moz-animation:move2Reverse 0.9s linear forwards;  -webkit-animation:move2Reverse  0.9s linear forwards;}
 .reverse .line4 { -moz-transform:rotate(315deg); -webkit-transform:rotate(315deg);  -moz-animation:move3Reverse 0.5s linear forwards;  -webkit-animation:move3Reverse  0.5s linear forwards;}
