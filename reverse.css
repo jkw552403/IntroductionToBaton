@@ -1,0 +1,120 @@
+.reverse .line1,.reverse .line2,.reverse .line3,.reverse .line4 {
+	background:#2187e7; 
+	width:0px;
+	height:1px;
+	box-shadow:0px 0px 5px 1px rgba(0,198,255,0.5);
+	-moz-transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+}
+
+.reverse .line1 { -moz-transform:rotate(17deg);  -webkit-transform:rotate(17deg);   -moz-animation:moveReverse  0.65s linear forwards; -webkit-animation:moveReverse  0.65s linear forwards;}
+.reverse .line2 { -moz-transform:rotate(140deg); -webkit-transform:rotate(140deg);  -moz-animation:move1Reverse 0.75s linear forwards; -webkit-animation:move1Reverse  0.75s linear forwards;}
+.reverse .line3 { -moz-transform:rotate(235deg); -webkit-transform:rotate(235deg);  -moz-animation:move2Reverse 0.9s linear forwards;  -webkit-animation:move2Reverse  0.9s linear forwards;}
+.reverse .line4 { -moz-transform:rotate(315deg); -webkit-transform:rotate(315deg);  -moz-animation:move3Reverse 0.5s linear forwards;  -webkit-animation:move3Reverse  0.5s linear forwards;}
+
+.reverse .ball, .reverse .ball1, .reverse .ball2, .reverse .ball3 {
+	background-color:#2187e7; 
+	background-image: -moz-linear-gradient(90deg, #2187e7 25%, #a0eaff); 
+	background-image: -webkit-linear-gradient(90deg, #2187e7 25%, #a0eaff); 
+
+	width:7px;
+	height:7px;
+	border-radius:50px;
+	
+	position:absolute;
+	z-index:99;
+	
+	-moz-transform:scale(1);
+	-moz-animation:pointReverse 0.1s linear forwards;
+	
+	-webkit-transform:scale(1);
+	-webkit-animation:pointReverse 0.1s linear forwards;
+}
+
+.reverse #layerBall, .reverse #layerBall1, .reverse #layerBall2, .reverse #layerBall3  { -moz-animation-delay:0s; -webkit-animation-delay:0s; }
+
+.reverse ul#social li { position:relative; background: #000000;
+	background: -moz-linear-gradient(top, #161616 0%, #000000 100%);
+	background: -webkit-linear-gradient(top, #161616 0%,#000000 100%);
+	border-left:1px solid #111; border-top:1px solid #111; border-right:1px solid #333; border-bottom:1px solid #333; 
+	width:70px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.8em;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	padding: 5px;
+	border-radius: 3px;
+	width: 70px;
+	opacity:1; 
+}
+
+.reverse #layerSocialControl  { -moz-animation:tooltipReverse 0.35s linear forwards;  -webkit-animation:tooltipReverse 0.35s linear forwards; }
+.reverse #layerSocialControl1 { -moz-animation:tooltipReverse 0.35s linear forwards;  -webkit-animation:tooltipReverse 0.35s linear forwards; }
+.reverse #layerSocialControl2 { -moz-animation:tooltipReverse 0.35s linear forwards;  -webkit-animation:tooltipReverse 0.35s linear forwards; }
+.reverse #layerSocialControl3 { -moz-animation:tooltipReverse 0.35s linear forwards;  -webkit-animation:tooltipReverse 0.35s linear forwards; }
+
+@-moz-keyframes moveReverse {
+	0%   { width:300px;}
+	100% { width:0px; box-shadow:none; }
+}
+
+@-moz-keyframes move1Reverse {
+	0%   { width:360px;}
+	100% { width:0px; box-shadow:none; }
+}
+
+@-moz-keyframes move2Reverse {
+	0%   { width:205px;}
+	100% { width:0px; box-shadow:none; }
+}
+
+@-moz-keyframes move3Reverse {
+	0%   { width:370px;}
+	100% { width:0px; box-shadow:none; }
+}
+
+@-webkit-keyframes moveReverse {
+	0%   { width:300px;}
+	100% { width:0px; box-shadow:none; }
+}
+
+@-webkit-keyframes move1Reverse {
+	0%   { width:360px;}
+	100% { width:0px; box-shadow:none; }
+}
+
+@-webkit-keyframes move2Reverse {
+	0%   { width:205px;}
+	100% { width:0px; box-shadow:none; }
+}
+
+@-webkit-keyframes move3Reverse {
+	0%   { width:370px;}
+	100% { width:0px; box-shadow:none; }
+}
+
+@-moz-keyframes pointReverse {
+	0%  {-moz-transform:scale(1,1);}
+	100%{-moz-transform:scale(0,0);}	
+}
+
+@-webkit-keyframes pointReverse {
+	0%  {-webkit-transform:scale(1,1);}
+	100%{-webkit-transform:scale(0,0);}	
+}
+
+@-moz-keyframes tooltipReverse {
+	0%  { -moz-transform:scale(1,1); opacity:1;}
+	50% { -moz-transform:scale(0.9,0.9); opacity:0.7; }
+	75% { -moz-transform:scale(1.2,1.2); opacity:0.3;}
+	100%{ -moz-transform:scale(0,0); opacity:0;}
+}
+
+@-webkit-keyframes tooltipReverse {
+	0%  { -webkit-transform:scale(1,1); opacity:1;}
+	50% { -webkit-transform:scale(0.9,0.9); opacity:0.7; }
+	75% { -webkit-transform:scale(1.2,1.2); opacity:0.3;}
+	100%{ -webkit-transform:scale(0,0); opacity:0;}
+}

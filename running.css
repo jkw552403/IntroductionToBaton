@@ -1,0 +1,130 @@
+.running .line1,.running .line2,.running .line3,.running .line4 {
+	background:#2187e7; 
+	width:0px;
+	height:1px;
+	-moz-transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+}
+
+.running .line1 { -moz-transform:rotate(17deg);  -webkit-transform:rotate(17deg);   -moz-animation:move  0.65s linear forwards; -webkit-animation:move  0.65s linear forwards;}
+.running .line2 { -moz-transform:rotate(140deg); -webkit-transform:rotate(140deg);  -moz-animation:move1 0.75s linear forwards; -webkit-animation:move1  0.75s linear forwards;}
+.running .line3 { -moz-transform:rotate(235deg); -webkit-transform:rotate(235deg);  -moz-animation:move2 0.9s linear forwards;  -webkit-animation:move2  0.9s linear forwards;}
+.running .line4 { -moz-transform:rotate(315deg); -webkit-transform:rotate(315deg);  -moz-animation:move3 0.5s linear forwards;  -webkit-animation:move3  0.5s linear forwards;}
+
+.running .ball, .running .ball1, .running .ball2, .running .ball3 {
+	background-color:#2187e7; 
+	background-image: -moz-linear-gradient(90deg, #2187e7 25%, #a0eaff); 
+	background-image: -webkit-linear-gradient(90deg, #2187e7 25%, #a0eaff); 
+
+	width:7px;
+	height:7px;
+	border-radius:50px;
+	
+	position:absolute;
+	z-index:99;
+	
+	-moz-transform:scale(0);
+	-moz-animation:point 0.1s linear forwards;
+	
+	-webkit-transform:scale(0);
+	-webkit-animation:point 0.1s linear forwards;
+}
+
+.running .pulse, .running .pulse1, .running .pulse2, .running .pulse3 {
+	width:12px;
+	height:12px;
+	border-radius:30px;
+	border: 1px solid #00c6ff;
+	box-shadow: 0 0 5px #00c6ff;
+	position:absolute;
+	
+	-moz-transform:scale(0);
+	-moz-animation:pulse 0.6s ease-out;
+	
+	-webkit-transform:scale(0);
+	-webkit-animation:pulse 0.6s ease-out;
+}
+
+
+.running #layerSocialControl  { -moz-animation:tooltip 0.35s 0.55s linear forwards; -webkit-animation:tooltip 0.35s 0.55s linear forwards; }
+.running #layerSocialControl1 { -moz-animation:tooltip 0.35s 0.65s linear forwards; -webkit-animation:tooltip 0.35s 0.65s linear forwards; }
+.running #layerSocialControl2 { -moz-animation:tooltip 0.35s 0.8s linear forwards;  -webkit-animation:tooltip 0.35s 0.8s linear forwards; }
+.running #layerSocialControl3 { -moz-animation:tooltip 0.35s 0.4s linear forwards;  -webkit-animation:tooltip 0.35s 0.4s linear forwards; }
+
+@-moz-keyframes move {
+	0%   { width:0px;}
+	100% { width:300px; box-shadow:0px 0px 5px 1px rgba(0,198,255,0.5); }
+}
+
+@-moz-keyframes move1 {
+	0%   { width:0px;}
+	100% { width:360px; box-shadow:0px 0px 5px 1px rgba(0,198,255,0.5); }
+}
+
+@-moz-keyframes move2 {
+	0%   { width:0px;}
+	100% { width:205px; box-shadow:0px 0px 5px 1px rgba(0,198,255,0.5); }
+}
+
+@-moz-keyframes move3 {
+	0%   { width:0px;}
+	100% { width:370px; box-shadow:0px 0px 5px 1px rgba(0,198,255,0.5); }
+}
+
+@-webkit-keyframes move {
+	0%   { width:0px;}
+	100% { width:300px; box-shadow:0px 0px 5px 1px rgba(0,198,255,0.5); }
+}
+
+@-webkit-keyframes move1 {
+	0%   { width:0px;}
+	100% { width:360px; box-shadow:0px 0px 5px 1px rgba(0,198,255,0.5); }
+}
+
+@-webkit-keyframes move2 {
+	0%   { width:0px;}
+	100% { width:205px; box-shadow:0px 0px 5px 1px rgba(0,198,255,0.5); }
+}
+
+@-webkit-keyframes move3 {
+	0%   { width:0px;}
+	100% { width:370px; box-shadow:0px 0px 5px 1px rgba(0,198,255,0.5); }
+}
+
+@-moz-keyframes point {
+	0%  {-moz-transform:scale(0,0);}
+	100%{-moz-transform:scale(1,1);}	
+}
+
+@-moz-keyframes pulse {
+	0%   {-moz-transform: scale(0);opacity: 0;}
+    10%  {-moz-transform: scale(1);opacity: 0.5;}
+	50%  {-moz-transform: scale(1.75);opacity: 0;}
+    100% {-moz-transform: scale(0);opacity: 0;}  
+} 
+
+@-webkit-keyframes point {
+	0%  {-webkit-transform:scale(0,0);}
+	100%{-webkit-transform:scale(1,1);}	
+}
+
+@-webkit-keyframes pulse {
+	0%   {-webkit-transform: scale(0);opacity: 0;}
+    10%  {-webkit-transform: scale(1);opacity: 0.5;}
+	50%  {-webkit-transform: scale(1.75);opacity: 0;}
+    100% {-webkit-transform: scale(0);opacity: 0;}  
+} 
+
+@-moz-keyframes tooltip {
+	0%  { -moz-transform:scale(0,0); opacity:0;}
+	50% { -moz-transform:scale(1.2,1.2); opacity:0.3; }
+	75% { -moz-transform:scale(0.9,0.9); opacity:0.7;}
+	100%{ -moz-transform:scale(1,1); opacity:1;}
+}
+
+@-webkit-keyframes tooltip {
+	0%  { -webkit-transform:scale(0,0); opacity:0;}
+	50% { -webkit-transform:scale(1.2,1.2); opacity:0.3; }
+	75% { -webkit-transform:scale(0.9,0.9); opacity:0.7;}
+	100%{ -webkit-transform:scale(1,1); opacity:1;}
+}
